@@ -23,13 +23,9 @@ class Superhero(models.Model):
         (GODS, 'Gods')
     ]
     # name of superhero
-    name = models.CharField(max_length=255, null=False, primary_key=True, validators=[
-        MinLengthValidator(10, 'The name field must contain at least 10 characters')
-    ])
+    name = models.CharField(max_length=255, null=False, primary_key=True)
     # alias of superhero
-    alias = models.CharField(max_length=255, null=False, validators=[
-        MinLengthValidator(10, 'The alias field must contain at least 10 characters')
-    ])
+    alias = models.CharField(max_length=255, null=False)
     # specie of superhero
     Species = models.CharField(
         max_length=1,
@@ -37,13 +33,9 @@ class Superhero(models.Model):
         default=DEMONS,
     )
     # birth of superhero
-    Date_of_Birth = models.CharField(max_length=255, null=False, validators=[
-        MinLengthValidator(10, 'The Date_of_Birth field must contain at least 10 characters')
-    ])
+    Date_of_Birth = models.CharField(max_length=255, null=False)
     # age of superhero
-    Age = models.CharField(max_length=255, null=False, validators=[
-        MinLengthValidator(10, 'The Age field must contain at least 10 characters')
-    ])
+    Age = models.CharField(max_length=255, null=False)
     # gender of superhero
     Gender = models.CharField(
         max_length=1,
@@ -52,39 +44,25 @@ class Superhero(models.Model):
     )
     # intelligence value of superhero
     intelligence = models.IntegerField(
-        max_length=2, null=False, validators=[
-        MinLengthValidator(1, 'The intelligence field must contain at least 1 characters')
-    ])
+        max_length=2, null=False)
     # strength value of superhero
     strength = models.IntegerField(
-        max_length=2, null=False, validators=[
-        MinLengthValidator(1, 'The strength field must contain at least 1 characters')
-    ])
+        max_length=2, null=False)
     # speed value of superhero
     speed = models.IntegerField(
-        max_length=2, null=False, validators=[
-        MinLengthValidator(1, 'The speed field must contain at least 1 characters')
-    ])
+        max_length=2, null=False)
     # durability value of superhero
     durability = models.IntegerField(
-        max_length=2, null=False, validators=[
-        MinLengthValidator(1, 'The durability field must contain at least 1 characters')
-    ])
+        max_length=2, null=False)
     # power value of superhero
     power = models.IntegerField(
-        max_length=2, null=False, validators=[
-        MinLengthValidator(1, 'The power field must contain at least 1 characters')
-    ])
+        max_length=2, null=False)
     # combat value of superhero
     combat = models.IntegerField(
-        max_length=2, null=False, validators=[
-        MinLengthValidator(1, 'The combat field must contain at least 1 characters')
-    ])
+        max_length=2, null=False)
     # tier value of superhero
     tier = models.IntegerField(
-        max_length=2, null=False, validators=[
-        MinLengthValidator(1, 'The tier field must contain at least 1 characters')
-    ])
+        max_length=2, null=False)
 
     def __str__(self):
         return "{} - {}".format(self.name, self.alias)
