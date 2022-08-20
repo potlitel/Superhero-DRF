@@ -12,3 +12,7 @@ https://www.django-rest-framework.org/api-guide/relations/
 https://dev.to/serhatteker/how-to-filter-your-query-with-params-in-django-rest-part-i-45n
 https://tech.serhatteker.com/post/2021-11/django-rest-query-part-1/
 https://tech.serhatteker.com/post/2021-11/django-rest-query-part-2/
+https://stackoverflow.com/questions/16554335/best-method-to-store-list-of-foreign-keys-in-a-model
+https://docs.djangoproject.com/en/dev/ref/models/fields/#manytomanyfield
+https://www.reddit.com/r/django/comments/f3tbxd/how_to_create_a_list_of_foreign_keys_in_a_django/
+https://www.appsloveworld.com/django/100/23/django-model-field-ordered-list-of-foreign-keys
