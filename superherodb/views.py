@@ -6,7 +6,7 @@ from .models import Superhero
 from .serializers import SuperherosSerializer
 
 
-class ListSongsView(generics.ListAPIView):
+class ListSuperherosView(generics.ListAPIView):
     """
     Provides a get method handler.
     """
